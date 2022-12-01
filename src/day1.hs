@@ -20,6 +20,6 @@ splitBy _ [] = []
 splitBy x xs =
   first : case rest of
     [] -> []
-    (_:xs') -> splitBy x xs'
+    (_ : xs') -> splitBy x xs'
   where
-    (first,rest) = break (==x) xs
+    (first, rest) = break (== x) xs
