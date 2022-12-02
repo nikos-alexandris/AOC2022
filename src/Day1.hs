@@ -6,8 +6,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day1.txt"
     let numbers = lines input
-    putStrLn $ "Part 1: " ++ show (part1 numbers)
-    putStrLn $ "Part 2: " ++ show (part2 numbers)
+    putStrLn $ "Day 1, Part 1: " ++ show (part1 numbers)
+    putStrLn $ "Day 1, Part 2: " ++ show (part2 numbers)
 
 part1 :: [String] -> Int
 part1 ns = maximum . map (sum . map read) $ splitBy "" ns
