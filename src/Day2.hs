@@ -13,22 +13,22 @@ part1 :: [String] -> Int
 part1 ns =
     sum scores
   where
-    spl = map (\l -> (head l, l !! 2)) ns
-    conv = map (bimap charToHand charToHand) spl
     scores = map (uncurry score) conv
     score opponent me = shapeScore me + outcome opponent me
+    conv = map (bimap charToHand charToHand) spl
+    spl = map (\l -> (head l, l !! 2)) ns
 
 part2 :: [String] -> Int
 part2 ns =
     sum scores
   where
-    spl = map (\l -> (head l, l !! 2)) ns
-    conv = map (bimap charToHand charToInstruction) spl
     scores = map (uncurry score) conv
     score opponent instruction =
         shapeScore decision + instructionToScore instruction
       where
         decision = decide opponent instruction
+    conv = map (bimap charToHand charToInstruction) spl
+    spl = map (\l -> (head l, l !! 2)) ns
 
 data Hand
     = Rock

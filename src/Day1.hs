@@ -10,10 +10,18 @@ main = do
     putStrLn $ "Day 1, Part 2: " ++ show (part2 numbers)
 
 part1 :: [String] -> Int
-part1 ns = maximum . map (sum . map read) $ splitBy "" ns
+part1 ns =
+    maximum
+        . map (sum . map read)
+        $ splitBy "" ns
 
 part2 :: [String] -> Int
-part2 ns = sum . take 3 . sortBy (flip compare) . map (sum . map read) $ splitBy "" ns
+part2 ns =
+    sum
+        . take 3
+        . sortBy (flip compare)
+        . map (sum . map read)
+        $ splitBy "" ns
 
 splitBy :: Eq a => a -> [a] -> [[a]]
 splitBy _ [] = []
