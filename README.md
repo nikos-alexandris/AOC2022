@@ -2,4 +2,11 @@
 
 ![Progress](https://progress-bar.dev/10/?scale=50&title=stars&width=200&color=ffd700&suffix=⭐)
 
-Runs all days with `make run` 🎅
+Run all days with
+
+```bash
+make -j $(nproc)
+make run
+```
+
+Merry christmas! 🎅
