@@ -4,7 +4,7 @@ BUILD_DIR=./build
 all: build
 
 .PHONY: build
-build: ${BUILD_DIR}/day1/Day1 ${BUILD_DIR}/day2/Day2 ${BUILD_DIR}/day3/Day3 ${BUILD_DIR}/day4/Day4
+build: ${BUILD_DIR}/day1/Day1 ${BUILD_DIR}/day2/Day2 ${BUILD_DIR}/day3/Day3 ${BUILD_DIR}/day4/Day4 ${BUILD_DIR}/day5/Day5
 
 .PHONY:run
 run: build
@@ -12,6 +12,7 @@ run: build
 	@${BUILD_DIR}/day2/Day2
 	@${BUILD_DIR}/day3/Day3
 	@${BUILD_DIR}/day4/Day4
+	@${BUILD_DIR}/day5/Day5
 
 ${BUILD_DIR}/day1/Day1: src/Day1.hs
 	mkdir -p ${BUILD_DIR}/day1
@@ -28,6 +29,10 @@ ${BUILD_DIR}/day3/Day3: src/Day3.hs
 ${BUILD_DIR}/day4/Day4: src/Day4.hs
 	mkdir -p ${BUILD_DIR}/day4
 	ghc -hidir ${BUILD_DIR}/day4 -odir ${BUILD_DIR}/day4 -o $@ $<
+
+${BUILD_DIR}/day5/Day5: src/Day5.hs
+	mkdir -p ${BUILD_DIR}/day5
+	ghc -hidir ${BUILD_DIR}/day5 -odir ${BUILD_DIR}/day5 -o $@ $<
 
 
 .PHONY: clean
