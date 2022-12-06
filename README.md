@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 2022 in `Haskell` 🎄
 
-![Progress](https://progress-bar.dev/10/?scale=50&title=stars&width=200&color=ffd700&suffix=⭐)
+![Progress](https://progress-bar.dev/12/?scale=50&title=stars&width=200&color=ffd700&suffix=⭐)
 
 Run all days with
 
