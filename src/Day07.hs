@@ -8,8 +8,8 @@ main = do
     let parsed = map parseLine (lines input)
     let fs = snd $ buildFs (drop 1 parsed) (Directory "/" [])
     let dirSizes = getDirSizes fs
-    putStrLn $ "Day 7, Part 1: " ++ show (part1 dirSizes)
-    putStrLn $ "Day 7, Part 2: " ++ show (part2 dirSizes)
+    putStrLn $ "Day 07, Part 1: " ++ show (part1 dirSizes)
+    putStrLn $ "Day 07, Part 2: " ++ show (part2 dirSizes)
 
 data File
     = File String Int

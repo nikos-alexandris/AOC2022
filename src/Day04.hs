@@ -6,8 +6,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day4.txt"
     let parsed = parseInput input
-    putStrLn $ "Day 4, Part 1: " ++ show (part1 parsed)
-    putStrLn $ "Day 4, Part 2: " ++ show (part2 parsed)
+    putStrLn $ "Day 04, Part 1: " ++ show (part1 parsed)
+    putStrLn $ "Day 04, Part 2: " ++ show (part2 parsed)
 
 part1 :: [((Int, Int), (Int, Int))] -> Int
 part1 =

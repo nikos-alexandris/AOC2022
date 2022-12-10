@@ -9,8 +9,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day3.txt"
     let sacks = lines input
-    putStrLn $ "Day 3, Part 1: " ++ show (part1 sacks)
-    putStrLn $ "Day 3, Part 2: " ++ show (part2 sacks)
+    putStrLn $ "Day 03, Part 1: " ++ show (part1 sacks)
+    putStrLn $ "Day 03, Part 2: " ++ show (part2 sacks)
 
 part1 :: [String] -> Int
 part1 sacks =

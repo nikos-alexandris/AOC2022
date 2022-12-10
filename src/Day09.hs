@@ -7,8 +7,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day9.txt"
     let parsed = parseInput input
-    putStrLn $ "Day 9, Part 1: " ++ show (part1 parsed)
-    putStrLn $ "Day 9, Part 2: " ++ show (part2 parsed)
+    putStrLn $ "Day 09, Part 1: " ++ show (part1 parsed)
+    putStrLn $ "Day 09, Part 2: " ++ show (part2 parsed)
 
 data Move
     = U

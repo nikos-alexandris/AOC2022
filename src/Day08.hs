@@ -7,8 +7,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day8.txt"
     let parsed = parse input
-    putStrLn $ "Day 8, Part 1: " ++ show (part1 parsed)
-    putStrLn $ "Day 8, Part 2: " ++ show (part2 parsed)
+    putStrLn $ "Day 08, Part 1: " ++ show (part1 parsed)
+    putStrLn $ "Day 08, Part 2: " ++ show (part2 parsed)
 
 parse :: String -> [[Int]]
 parse = map (map digitToInt) . lines

@@ -9,8 +9,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day5.txt"
     let parsed = parseInput input
-    putStrLn $ "Day 5, Part 1: " ++ show (part1 parsed)
-    putStrLn $ "Day 5, Part 2: " ++ show (part2 parsed)
+    putStrLn $ "Day 05, Part 1: " ++ show (part1 parsed)
+    putStrLn $ "Day 05, Part 2: " ++ show (part2 parsed)
 
 type State = ([[Char]], [(Int, Int, Int)])
 

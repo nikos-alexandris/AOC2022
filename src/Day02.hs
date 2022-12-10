@@ -6,8 +6,8 @@ main :: IO ()
 main = do
     input <- readFile "inputs/day2.txt"
     let numbers = lines input
-    putStrLn $ "Day 2, Part 1: " ++ show (part1 numbers)
-    putStrLn $ "Day 2, Part 2: " ++ show (part2 numbers)
+    putStrLn $ "Day 02, Part 1: " ++ show (part1 numbers)
+    putStrLn $ "Day 02, Part 2: " ++ show (part2 numbers)
 
 part1 :: [String] -> Int
 part1 ns =
